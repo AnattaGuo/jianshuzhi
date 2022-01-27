@@ -1,7 +1,7 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
+const lightCodeTheme = require('prism-react-renderer/themes/nightOwlLight');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
@@ -13,7 +13,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'anatta guo', // Usually your GitHub org/user name.
+  organizationName: 'anattaguo', // Usually your GitHub org/user name.
   projectName: 'blog', // Usually your repo name.
 
   presets: [
@@ -25,7 +25,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           routeBasePath: '/', // Serve the blog at the site's root
@@ -110,8 +110,9 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} 简疏志 Built with Docusaurus.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        // theme: lightCodeTheme,
+        theme: darkCodeTheme,
+        // darkTheme: darkCodeTheme,
       },
     }),
 };
