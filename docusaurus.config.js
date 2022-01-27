@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: '简疏志',
   tagline: '常精进，勿懈怠',
-  url: 'https://jianshuzhi.netlify.app',
+  url: 'https://jianshuzhi.me',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
