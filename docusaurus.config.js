@@ -21,21 +21,17 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: false, //disable the docs plugin
-        // docs: {
-        //   sidebarPath: require.resolve('./sidebars.js'),
-        //   // Please change this to your repo.
-        //   editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        // },
-        blog: {
-          routeBasePath: 'blog', // Serve the blog at the site's root
-          blogTitle: 'Blog title',
-          blogSidebarCount: 10,
-
-          showReadingTime: true,
+        // docs: true, //disable the docs plugin
+        docs: {
+          sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        },
+        blog: {
+          routeBasePath: '/', // Serve the blog at the site's root
+          blogTitle: '简疏志',
+          blogSidebarCount: 10,
+          showReadingTime: true,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -54,17 +50,17 @@ const config = {
           src: 'img/logo.png',
         },
         items: [
-          // {
-          //   type: 'doc',
-          //   docId: 'intro',
-          //   position: 'left',
-          //   label: 'Tutorial',
-          // },
-          {to: '/', label: 'Blog', position: 'left'},
+          {to: '/', label: '博客', position: 'left'},
           {
             href: 'https://github.com/anattaguo/jianshuzhi',
             label: 'GitHub',
             position: 'right',
+          },
+          {
+            type: 'doc',
+            docId: 'intro',
+            position: 'left',
+            label: '学习系列',
           },
         ],
       },
