@@ -18,7 +18,6 @@ module.exports = {
       {
         docs: false,
         blog: {
-          path: './blog',
           routeBasePath: '/', // Set this value to '/'.
         },
       },
