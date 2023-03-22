@@ -1,40 +1,42 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/nightOwlLight');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/nightOwlLight");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '简疏志',
-  tagline: '常精进，勿懈怠',
-  url: 'https://jianshuzhi.me',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'anattaguo', // Usually your GitHub org/user name.
-  projectName: 'blog', // Usually your repo name.
+  title: "简疏志",
+  tagline: "常精进，勿懈怠",
+  url: "https://jianshuzhi.me",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
+  organizationName: "anattaguo", // Usually your GitHub org/user name.
+  projectName: "blog", // Usually your repo name.
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         // docs: true, //disable the docs plugin
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         blog: {
-          routeBasePath: '/', // Serve the blog at the site's root
-          blogTitle: '简疏志',
+          routeBasePath: "/", // Serve the blog at the site's root
+          blogTitle: "简疏志",
           blogSidebarCount: 10,
           showReadingTime: true,
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -44,28 +46,29 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: '简疏志',
+        title: "简疏志",
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.png',
+          alt: "My Site Logo",
+          src: "img/logo.png",
         },
         items: [
-          {to: '/', label: '博客', position: 'left'},
+          { to: "/", label: "博客", position: "left" },
           {
-            href: 'https://github.com/anattaguo/jianshuzhi',
-            label: 'GitHub',
-            position: 'right',
+            type: "doc",
+
+            docId: "reading-notes/2018-04-14-deep-work-reading-notes",
+            position: "left",
+            label: "学习系列",
           },
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: '学习系列',
+            href: "https://github.com/anattaguo/jianshuzhi",
+            label: "GitHub",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           // {
           //   title: 'Docs',
