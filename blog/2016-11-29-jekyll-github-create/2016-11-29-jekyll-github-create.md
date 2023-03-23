@@ -13,6 +13,8 @@ tags: [博客]
 - Step 2 配置博客
 - Step 3 发布日志
 
+<!--truncate-->
+
 ## Step 1 创建博客
 
 ### 1.1 创建自己的 Github 账号
